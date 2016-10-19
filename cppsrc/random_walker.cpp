@@ -35,13 +35,12 @@ int Random_Warker::readCSV(){
         int array[] = {0, 1, 2, 3, 4};
         //std::cout << str << std::endl;
         for(auto& i : array){
-            std::cout << line << std::endl;            
+            getline(line, element, ',');
+            
         }
     }
-
     
     file.close();
-
         
     return EXIT_SUCCESS;    
 }
