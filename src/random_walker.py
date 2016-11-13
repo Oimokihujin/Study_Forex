@@ -288,7 +288,6 @@ class Walker(object):
         answer_set = [0 for i in range(len(self.ups[num:]))] + \
                     [1 for i in range(len(self.downs[num:]))] + \
                     [2 for i in range(len(self.dummies[num:]))]
-
         estimator = SVC(C=1.0)
         estimator.fit(learning_set, label_set)
 
